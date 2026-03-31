@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Política de Privacidade - CHILLS</title>
+
+  <style>
+    :root {
+      --primary: #FF6B00;
+      --primary-dark: #FF8C00;
+      --bg-dark: #0D0D0D;
+      --card-bg: rgba(255, 255, 255, 0.05);
+      --text-primary: #FFFFFF;
+      --text-secondary: rgba(255, 255, 255, 0.7);
+      --border-color: rgba(255, 107, 0, 0.3);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: var(--bg-dark);
+      color: var(--text-primary);
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .back-button {
+      position: absolute;
+      left: 0;
+      background: none;
+      border: none;
+      color: var(--text-primary);
+      font-size: 24px;
+      cursor: pointer;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: opacity 0.3s;
+    }
+
+    .back-button:hover {
+      opacity: 0.7;
+    }
+
+    .header h1 {
+      font-size: 18px;
+      letter-spacing: 2px;
+      font-weight: 900;
+    }
+
+    .update {
+      text-align: center;
+      color: var(--primary);
+      font-size: 12px;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+
+    .section {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 20px;
+      backdrop-filter: blur(10px);
+    }
+
+    .section h2 {
+      font-size: 16px;
+      margin-bottom: 10px;
+      font-weight: 900;
+      letter-spacing: 1px;
+      color: var(--text-primary);
+    }
+
+    .section p {
+      font-size: 14px;
+      color: var(--text-secondary);
+      line-height: 1.6;
+      white-space: pre-line;
+    }
+
+    .divider {
+      margin: 20px 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.24);
+    }
+
+    ul {
+      margin-top: 10px;
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 6px;
+      color: var(--text-secondary);
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .section strong {
+      color: var(--primary);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <button class="back-button" onclick="history.back()">←</button>
+      <h1>POLÍTICA DE PRIVACIDADE</h1>
+    </div>
+
+    <div class="update">Última atualização: 30/03/2026</div>
+
+    <div class="section">
+      <h2>1. Informações que Coletamos</h2>
+      <p>Coletamos as seguintes informações ao utilizar o CHILLS:</p>
+      <p><strong>1.1 Informações Pessoais</strong></p>
+      <p>- Nome Completo: Quando você se registra ou faz login via Google ou Apple, podemos coletar seu nome completo.<br>
+      - E-mail: Coletamos seu e-mail para comunicação e recursos relacionados à sua conta.</p>
+      <p><strong>1.2 Informações de Uso</strong></p>
+      <p>- Interação com o App: Dados sobre como você utiliza o app, como tempo de uso, jogos jogados e interações.<br>
+      - Informações do Dispositivo: Modelo do dispositivo, sistema operacional, identificadores de dispositivo.<br>
+      - Dados de Localização: Coletados apenas se você permitir e se o recurso de localização for ativado.</p>
+    </div>
+
+    <div class="section">
+      <h2>2. Como Usamos Suas Informações</h2>
+      <p>Usamos suas informações para os seguintes fins:</p>
+      <p>- Para fornecer e melhorar os serviços do CHILLS.<br>
+      - Para personalizar sua experiência no app e sugerir jogos ou desafios relevantes.<br>
+      - Para enviar notificações, promoções e outras comunicações relacionadas.<br>
+      - Para garantir a segurança e integridade do app.<br>
+      - Para analisar o desempenho do aplicativo e corrigir erros técnicos.</p>
+    </div>
+
+    <div class="section">
+      <h2>3. Compartilhamento de Informações</h2>
+      <p>Não compartilhamos suas informações pessoais com terceiros, exceto nas seguintes situações:</p>
+      <p><strong>Provedores de serviços:</strong> Podemos compartilhar com prestadores de serviços que ajudam no funcionamento do app, como:<br>
+      - Supabase: Para armazenamento de dados e autenticação.<br>
+      - Ferramentas de análise: Como Google Analytics, para entender como o app é utilizado e melhorar a experiência do usuário.<br>
+      - Ferramentas de monitoramento: Como Sentry, para identificar e corrigir erros no aplicativo.</p>
+      <p><strong>Exigências legais:</strong> Podemos divulgar suas informações para cumprir com a lei, responder a solicitações governamentais ou proteger nossos direitos legais.</p>
+      <p><strong>Consentimento:</strong> Podemos compartilhar informações com terceiros quando você fornecer consentimento explícito para tal.</p>
+    </div>
+
+    <div class="section">
+      <h2>4. Armazenamento e Segurança dos Dados</h2>
+      <p>Tomamos medidas de segurança adequadas para proteger suas informações, como criptografia e práticas de segurança em servidores. Seus dados são armazenados em servidores seguros operados por nós ou por nossos provedores de serviços (como o Supabase).</p>
+      <p>No entanto, nenhuma transmissão de dados pela internet é 100% segura, e não podemos garantir a segurança total.</p>
+    </div>
+
+    <div class="section">
+      <h2>5. Retenção de Dados</h2>
+      <p>Manteremos suas informações enquanto sua conta estiver ativa ou conforme necessário para fornecer nossos serviços. Você pode solicitar a exclusão de suas informações pessoais a qualquer momento.</p>
+      <p>Em alguns casos, podemos reter certas informações por períodos mais longos, conforme exigido por lei ou para fins legítimos de negócios, como prevenção a fraudes, resolução de disputas ou cumprimento de obrigações legais.</p>
+    </div>
+
+    <div class="section">
+      <h2>6. Seus Direitos</h2>
+      <p>Você tem os seguintes direitos sobre suas informações pessoais:</p>
+      <p><strong>Acesso:</strong> Solicitar uma cópia das suas informações pessoais.<br>
+      <strong>Correção:</strong> Atualizar informações incorretas ou desatualizadas.<br>
+      <strong>Exclusão:</strong> Solicitar a exclusão de suas informações pessoais. A exclusão pode afetar a continuidade do uso do app.<br>
+      <strong>Portabilidade:</strong> Solicitar a transferência de seus dados para outro serviço, quando tecnicamente possível.<br>
+      <strong>Revogação de consentimento:</strong> Quando o tratamento for baseado em seu consentimento, você pode revogá-lo a qualquer momento.</p>
+      <p>Para exercer seus direitos, entre em contato conosco através do e-mail indicado na seção 9.</p>
+    </div>
+
+    <div class="section">
+      <h2>7. Cookies e Tecnologias Semelhantes</h2>
+      <p>Podemos utilizar cookies e tecnologias semelhantes para melhorar a experiência do usuário, lembrar preferências e entender como você interage com o aplicativo. Você pode configurar seu dispositivo para recusar cookies, mas isso pode afetar algumas funcionalidades do app.</p>
+    </div>
+
+    <div class="section">
+      <h2>8. Alterações na Política de Privacidade</h2>
+      <p>Podemos atualizar esta Política de Privacidade periodicamente. As alterações serão publicadas com a data de atualização indicada. Recomendamos que você revise esta política regularmente. Alterações significativas serão notificadas através do aplicativo ou por e-mail.</p>
+    </div>
+
+    <div class="section">
+      <h2>9. Contato</h2>
+      <p>Caso tenha dúvidas sobre esta Política de Privacidade ou deseje exercer algum direito sobre seus dados, entre em contato conosco por e-mail: contatochills@gmail.com</p>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="section">
+      <h2>SOLICITAÇÃO DE EXCLUSÃO DE CONTA</h2>
+      <p>Se você deseja excluir sua conta no CHILLS, siga os passos abaixo:</p>
+      <p><strong>Como Solicitar a Exclusão da Sua Conta</strong></p>
+      <p>Envie um e-mail para: contatochills@gmail.com</p>
+      <p>No e-mail, inclua:</p>
+      <p>- Assunto: Solicitação de Exclusão de Conta<br>
+      - Corpo do E-mail:<br>
+      &nbsp;&nbsp;- Nome completo associado à conta<br>
+      &nbsp;&nbsp;- E-mail associado à conta<br>
+      &nbsp;&nbsp;- (Opcional) Motivo da exclusão</p>
+      <p><strong>Prazo de Processamento</strong></p>
+      <p>Após recebermos sua solicitação, processaremos a exclusão da conta e você receberá uma confirmação por e-mail dentro de 7 dias úteis.</p>
+      <p><strong>O que Acontece Após a Solicitação</strong></p>
+      <p>- Todos os dados associados à sua conta serão apagados permanentemente de nossos servidores, incluindo:<br>
+      &nbsp;&nbsp;- Histórico de jogos e pontuações<br>
+      &nbsp;&nbsp;- Configurações e preferências<br>
+      &nbsp;&nbsp;- Informações de perfil<br>
+      - A exclusão é permanente e não pode ser revertida.<br>
+      - Após a exclusão, você perderá o acesso ao aplicativo e não poderá recuperar nenhum dado associado à sua conta.</p>
+      <p><strong>Importante</strong></p>
+      <p>- A exclusão é permanente e os dados não poderão ser recuperados sob nenhuma circunstância.<br>
+      - Se você mudar de ideia após solicitar a exclusão, não será possível reverter o processo - você precisará criar uma nova conta do zero.<br>
+      - Algumas informações podem ser retidas por períodos limitados conforme exigido por lei ou para cumprimento de obrigações legais.</p>
+    </div>
+  </div>
+</body>
+</html>
