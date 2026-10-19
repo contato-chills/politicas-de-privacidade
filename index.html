@@ -1,146 +1,408 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Política de Privacidade - Chills Game</title>
-  <style>
-    :root {
-      --primary: #FF6B00;
-      --primary-dark: #FF8C00;
-      --bg-dark: #0D0D0D;
-      --card-bg: rgba(255, 255, 255, 0.05);
-      --text-primary: #FFFFFF;
-      --text-secondary: rgba(255, 255, 255, 0.7);
-      --border-color: rgba(255, 107, 0, 0.3);
-    }
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
-    body { background: var(--bg-dark); color: var(--text-primary); padding: 20px; }
-    .container { max-width: 900px; margin: auto; }
-    .header { text-align: center; margin-bottom: 30px; }
-    .header h1 { font-size: 22px; letter-spacing: 2px; font-weight: 900; }
-    .update { text-align: center; color: var(--primary); font-size: 12px; font-weight: bold; margin-bottom: 30px; }
-    .section { background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 12px; padding: 20px; margin-bottom: 20px; backdrop-filter: blur(10px); }
-    .section h2 { font-size: 16px; margin-bottom: 10px; font-weight: 900; letter-spacing: 1px; color: var(--text-primary); }
-    .section p { font-size: 14px; color: var(--text-secondary); line-height: 1.6; white-space: pre-line; }
-    .divider { margin: 20px 0; border-top: 1px solid rgba(255, 255, 255, 0.24); }
-    ul { margin-top: 10px; padding-left: 20px; }
-    li { margin-bottom: 6px; color: var(--text-secondary); font-size: 14px; line-height: 1.6; }
-    .section strong { color: var(--primary); }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Política de Privacidade - Chills Game</title>
+<style>
+:root {
+  --primary: #FF6B00; --primary-dark: #FF8C00; --bg-dark: #0D0D0D;
+  --card-bg: rgba(255,255,255,0.05); --text-primary: #FFFFFF;
+  --text-secondary: rgba(255,255,255,0.7); --border-color: rgba(255,107,0,0.3);
+}
+* { margin:0; padding:0; box-sizing:border-box; font-family: Arial, sans-serif; }
+body { background: var(--bg-dark); color: var(--text-primary); padding: 20px; }
+.container { max-width: 900px; margin: auto; }
+.header { text-align: center; margin-bottom: 30px; }
+.header h1 { font-size: 22px; letter-spacing: 2px; font-weight: 900; }
+.update { text-align: center; color: var(--primary); font-size: 12px; font-weight: bold; margin-bottom: 30px; }
+.section { background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 12px; padding: 20px; margin-bottom: 20px; backdrop-filter: blur(10px); }
+.section h2 { font-size: 16px; margin-bottom: 10px; font-weight: 900; letter-spacing: 1px; color: var(--text-primary); }
+.section p { font-size: 14px; color: var(--text-secondary); line-height: 1.6; white-space: pre-line; }
+.section strong { color: var(--primary); }
+.divider { margin: 20px 0; border-top: 1px solid rgba(255,255,255,0.24); }
+ul { margin-top: 10px; padding-left: 20px; }
+li { margin-bottom: 6px; color: var(--text-secondary); font-size: 14px; line-height: 1.6; }
+
+/* seletor de idioma */
+.langbar { display: flex; justify-content: center; gap: 8px; margin-bottom: 24px; flex-wrap: wrap; }
+.langbar button {
+  background: transparent; color: var(--text-secondary);
+  border: 1px solid var(--border-color); border-radius: 999px;
+  padding: 7px 16px; font-size: 12px; font-weight: bold; letter-spacing: 1px;
+  cursor: pointer; transition: background .15s, color .15s;
+}
+.langbar button:hover { color: var(--text-primary); }
+.langbar button[aria-current="true"] { background: var(--primary); color: #0D0D0D; border-color: var(--primary); }
+.lang[hidden] { display: none; }
+</style>
 </head>
 <body>
-  <div class="container">
-    <div class="header">
-      <h1>POLÍTICA DE PRIVACIDADE</h1>
-    </div>
-    <div class="update">Última atualização: 16/06/2026</div>
-    <div class="section">
-      <h2>1. Identificação do Controlador de Dados</h2>
-      <p>O aplicativo Chills Game é desenvolvido e operado por Vitor Vasconcellos Dias e Rafael Alves Damião da Rocha Neiva, sob o nome Two Devs, com endereço eletrônico contatochills@gmail.com.
+<div class="container">
+<div class="langbar">
+<button type="button" data-l="pt">PORTUGUÊS</button>
+<button type="button" data-l="en">ENGLISH</button>
+<button type="button" data-l="es">ESPAÑOL</button>
+</div>
+<div class="lang" data-lang="pt" data-title="Política de Privacidade - Chills Game">
+<div class="header"><h1>POLÍTICA DE PRIVACIDADE</h1></div>
+<div class="update">Última atualização: 19/10/2026</div>
+<div class="section">
+<h2>1. Identificação do Controlador de Dados</h2>
+<p>O aplicativo Chills Game é desenvolvido e operado por Vitor Vasconcellos Dias e Rafael Alves Damião da Rocha Neiva, sob o nome Two Devs, com endereço eletrônico contatochills@gmail.com.
 Para os fins da Lei Geral de Proteção de Dados Pessoais (Lei nº 13.709/2018 - LGPD), os responsáveis acima indicados atuam como controladores dos seus dados pessoais, sendo responsáveis pelas decisões referentes ao tratamento de suas informações.</p>
-    </div>
-    <div class="section">
-      <h2>2. Informações que Coletamos</h2>
-      <p>Coletamos as seguintes informações ao utilizar o Chills Game:</p>
-      <p><strong>2.1 Informações Pessoais</strong></p>
-      <p>- Nome Completo: Quando você se registra ou faz login via Google ou Apple, podemos coletar seu nome completo.<br>
-      - E-mail: Coletamos seu e-mail para comunicação e recursos relacionados à sua conta.</p>
-      <p><strong>2.2 Informações de Uso</strong></p>
-      <p>- Interação com o App: Dados sobre como você utiliza o app, como tempo de uso, jogos jogados e interações.<br>
-      - Informações do Dispositivo: Modelo do dispositivo, sistema operacional, identificadores de dispositivo.<br>
-      - Identificadores de Publicidade: Utilizamos identificadores de publicidade para exibição de anúncios por meio do Google AdMob.</p>
-    </div>
-    <div class="section">
-      <h2>3. Bases Legais para o Tratamento de Dados</h2>
-      <p>O tratamento dos seus dados pessoais é realizado com fundamento nas seguintes bases legais previstas na LGPD (Art. 7º):</p>
-      <p><strong>Execução de contrato:</strong> Para fornecer os serviços do Chills Game, gerenciar sua conta e processar assinaturas (Art. 7º, V).</p>
-      <p><strong>Consentimento:</strong> Para o envio de notificações promocionais e comunicações de marketing (Art. 7º, I). Você pode revogar seu consentimento a qualquer momento.</p>
-      <p><strong>Interesse legítimo:</strong> Para melhorar nossos serviços, personalizar sua experiência, garantir a segurança do aplicativo e realizar análises de desempenho (Art. 7º, IX).</p>
-      <p><strong>Cumprimento de obrigação legal:</strong> Para atender exigências legais, regulatórias ou determinações judiciais (Art. 7º, II).</p>
-    </div>
-    <div class="section">
-      <h2>4. Como Usamos Suas Informações</h2>
-      <p>Usamos suas informações para os seguintes fins:</p>
-      <p>- Para fornecer e melhorar os serviços do Chills Game.<br>
-      - Para personalizar sua experiência no app.<br>
-      - Para enviar notificações, promoções e outras comunicações relacionadas.<br>
-      - Para exibir anúncios por meio do Google AdMob.<br>
-      - Para garantir a segurança e integridade do app.<br>
-      - Para analisar o desempenho do aplicativo e corrigir erros técnicos.<br>
-      - Para cumprir obrigações legais e regulatórias.</p>
-    </div>
-    <div class="section">
-      <h2>5. Compartilhamento de Informações</h2>
-      <p>Não vendemos suas informações pessoais. Podemos compartilhar seus dados com terceiros apenas nas seguintes situações:</p>
-      <p><strong>Provedores de serviços:</strong> Compartilhamos dados com prestadores de serviços que auxiliam no funcionamento do app, como:<br>
-      - Firebase (Google): Para armazenamento de dados e autenticação.<br>
-      - Google AdMob: Para exibição de anúncios.<br>
-      - RevenueCat: Para gerenciamento de assinaturas.<br>
-      - Google Play Store e Apple App Store: Para processamento de pagamentos e assinaturas.</p>
-      <p>Caso novos provedores sejam incorporados, esta política será atualizada.</p>
-      <p><strong>Exigências legais:</strong> Podemos divulgar suas informações para cumprir com a lei, responder a solicitações governamentais ou proteger nossos direitos legais.</p>
-      <p><strong>Consentimento:</strong> Podemos compartilhar informações com terceiros quando você fornecer consentimento explícito para tal.</p>
-    </div>
-    <div class="section">
-      <h2>6. Transferência Internacional de Dados</h2>
-      <p>Alguns dos nossos provedores de serviços, como o Firebase e ferramentas de análise, podem armazenar e processar seus dados em servidores localizados fora do Brasil, incluindo nos Estados Unidos.
+</div>
+<div class="section">
+<h2>2. Informações que Coletamos</h2>
+<p>Coletamos as seguintes informações ao utilizar o Chills Game:</p>
+<p><strong>2.1 Informações Pessoais</strong></p>
+<p>- Nome Completo: Quando você se registra ou faz login via Google ou Apple, podemos coletar seu nome completo.<br>
+- E-mail: Coletamos seu e-mail para comunicação e recursos relacionados à sua conta.</p>
+<p><strong>2.2 Informações de Uso</strong></p>
+<p>- Interação com o App: Dados sobre como você utiliza o app, como tempo de uso, jogos jogados e interações.<br>
+- Informações do Dispositivo: Modelo do dispositivo, sistema operacional, identificadores de dispositivo.<br>
+- Identificadores de Publicidade: Utilizamos identificadores de publicidade para exibição de anúncios por meio do Google AdMob.</p>
+</div>
+<div class="section">
+<h2>3. Bases Legais para o Tratamento de Dados</h2>
+<p>O tratamento dos seus dados pessoais é realizado com fundamento nas seguintes bases legais previstas na LGPD (Art. 7º):</p>
+<p><strong>Execução de contrato:</strong> Para fornecer os serviços do Chills Game, gerenciar sua conta e processar assinaturas (Art. 7º, V).</p>
+<p><strong>Consentimento:</strong> Para o envio de notificações promocionais e comunicações de marketing (Art. 7º, I). Você pode revogar seu consentimento a qualquer momento.</p>
+<p><strong>Interesse legítimo:</strong> Para melhorar nossos serviços, personalizar sua experiência, garantir a segurança do aplicativo e realizar análises de desempenho (Art. 7º, IX).</p>
+<p><strong>Cumprimento de obrigação legal:</strong> Para atender exigências legais, regulatórias ou determinações judiciais (Art. 7º, II).</p>
+</div>
+<div class="section">
+<h2>4. Como Usamos Suas Informações</h2>
+<p>Usamos suas informações para os seguintes fins:</p>
+<p>- Para fornecer e melhorar os serviços do Chills Game.<br>
+- Para personalizar sua experiência no app.<br>
+- Para enviar notificações, promoções e outras comunicações relacionadas.<br>
+- Para exibir anúncios por meio do Google AdMob.<br>
+- Para garantir a segurança e integridade do app.<br>
+- Para analisar o desempenho do aplicativo e corrigir erros técnicos.<br>
+- Para cumprir obrigações legais e regulatórias.</p>
+</div>
+<div class="section">
+<h2>5. Compartilhamento de Informações</h2>
+<p>Não vendemos suas informações pessoais. Podemos compartilhar seus dados com terceiros apenas nas seguintes situações:</p>
+<p><strong>Provedores de serviços:</strong> Compartilhamos dados com prestadores de serviços que auxiliam no funcionamento do app, como:<br>
+- Firebase (Google): Para armazenamento de dados e autenticação.<br>
+- Google AdMob: Para exibição de anúncios.<br>
+- RevenueCat: Para gerenciamento de assinaturas.<br>
+- Google Play Store e Apple App Store: Para processamento de pagamentos e assinaturas.</p>
+<p>Caso novos provedores sejam incorporados, esta política será atualizada.</p>
+<p><strong>Exigências legais:</strong> Podemos divulgar suas informações para cumprir com a lei, responder a solicitações governamentais ou proteger nossos direitos legais.</p>
+<p><strong>Consentimento:</strong> Podemos compartilhar informações com terceiros quando você fornecer consentimento explícito para tal.</p>
+</div>
+<div class="section">
+<h2>6. Transferência Internacional de Dados</h2>
+<p>Alguns dos nossos provedores de serviços, como o Firebase e ferramentas de análise, podem armazenar e processar seus dados em servidores localizados fora do Brasil, incluindo nos Estados Unidos.
 Nestes casos, adotamos medidas para garantir que seus dados recebam nível de proteção adequado, em conformidade com o Art. 33 da LGPD.</p>
-    </div>
-    <div class="section">
-      <h2>7. Armazenamento e Segurança dos Dados</h2>
-      <p>Tomamos medidas de segurança adequadas para proteger suas informações, como criptografia e práticas de segurança em servidores. Seus dados são armazenados em servidores seguros operados por nossos provedores de serviços (como o Firebase).</p>
-      <p>No entanto, nenhuma transmissão de dados pela internet é 100% segura, e não podemos garantir a segurança total. Em caso de incidente de segurança que possa acarretar risco ou dano relevante, notificaremos os usuários afetados e a Autoridade Nacional de Proteção de Dados (ANPD), conforme exigido pela LGPD.</p>
-    </div>
-    <div class="section">
-      <h2>8. Retenção de Dados</h2>
-      <p>Manteremos suas informações enquanto sua conta estiver ativa ou conforme necessário para fornecer nossos serviços. Você pode solicitar a exclusão de suas informações pessoais a qualquer momento.</p>
-      <p>Em alguns casos, podemos reter certas informações por períodos mais longos, conforme exigido por lei ou para fins legítimos de negócios.</p>
-    </div>
-    <div class="section">
-      <h2>9. Seus Direitos (LGPD - Art. 18)</h2>
-      <p>Em conformidade com a LGPD, você tem os seguintes direitos sobre suas informações pessoais:</p>
-      <p><strong>Confirmação e Acesso:</strong> Solicitar a confirmação da existência de tratamento e uma cópia das suas informações pessoais.<br>
-      <strong>Correção:</strong> Atualizar informações incompletas, inexatas ou desatualizadas.<br>
-      <strong>Anonimização, bloqueio ou eliminação:</strong> Solicitar o tratamento adequado de dados desnecessários ou excessivos.<br>
-      <strong>Exclusão:</strong> Solicitar a exclusão de dados pessoais tratados com base no seu consentimento.<br>
-      <strong>Portabilidade:</strong> Solicitar a transferência de seus dados para outro serviço, quando tecnicamente possível.<br>
-      <strong>Revogação de consentimento:</strong> Quando o tratamento for baseado em seu consentimento, você pode revogá-lo a qualquer momento.<br>
-      <strong>Informação sobre compartilhamento:</strong> Solicitar informações sobre com quais entidades seus dados foram compartilhados.</p>
-      <p>Para exercer seus direitos, entre em contato conosco pelo e-mail contatochills@gmail.com. Responderemos às solicitações em até 15 (quinze) dias úteis.</p>
-    </div>
-    <div class="section">
-      <h2>10. Proteção de Dados de Menores</h2>
-      <p>O Chills Game é destinado exclusivamente a maiores de 18 anos. Não coletamos intencionalmente dados pessoais de menores de 18 anos.
+</div>
+<div class="section">
+<h2>7. Armazenamento e Segurança dos Dados</h2>
+<p>Tomamos medidas de segurança adequadas para proteger suas informações, como criptografia e práticas de segurança em servidores. Seus dados são armazenados em servidores seguros operados por nossos provedores de serviços (como o Firebase).</p>
+<p>No entanto, nenhuma transmissão de dados pela internet é 100% segura, e não podemos garantir a segurança total. Em caso de incidente de segurança que possa acarretar risco ou dano relevante, notificaremos os usuários afetados e a Autoridade Nacional de Proteção de Dados (ANPD), conforme exigido pela LGPD.</p>
+</div>
+<div class="section">
+<h2>8. Retenção de Dados</h2>
+<p>Manteremos suas informações enquanto sua conta estiver ativa ou conforme necessário para fornecer nossos serviços. Você pode solicitar a exclusão de suas informações pessoais a qualquer momento.</p>
+<p>Em alguns casos, podemos reter certas informações por períodos mais longos, conforme exigido por lei ou para fins legítimos de negócios.</p>
+</div>
+<div class="section">
+<h2>9. Seus Direitos (LGPD - Art. 18)</h2>
+<p>Em conformidade com a LGPD, você tem os seguintes direitos sobre suas informações pessoais:</p>
+<p><strong>Confirmação e Acesso:</strong> Solicitar a confirmação da existência de tratamento e uma cópia das suas informações pessoais.<br>
+<strong>Correção:</strong> Atualizar informações incompletas, inexatas ou desatualizadas.<br>
+<strong>Anonimização, bloqueio ou eliminação:</strong> Solicitar o tratamento adequado de dados desnecessários ou excessivos.<br>
+<strong>Exclusão:</strong> Solicitar a exclusão de dados pessoais tratados com base no seu consentimento.<br>
+<strong>Portabilidade:</strong> Solicitar a transferência de seus dados para outro serviço, quando tecnicamente possível.<br>
+<strong>Revogação de consentimento:</strong> Quando o tratamento for baseado em seu consentimento, você pode revogá-lo a qualquer momento.<br>
+<strong>Informação sobre compartilhamento:</strong> Solicitar informações sobre com quais entidades seus dados foram compartilhados.</p>
+<p>Para exercer seus direitos, entre em contato conosco pelo e-mail contatochills@gmail.com. Responderemos às solicitações em até 15 (quinze) dias úteis.</p>
+</div>
+<div class="section">
+<h2>10. Proteção de Dados de Menores</h2>
+<p>O Chills Game é destinado exclusivamente a maiores de 18 anos. Não coletamos intencionalmente dados pessoais de menores de 18 anos.
 Caso tenhamos conhecimento de que coletamos dados de um menor de idade, tomaremos medidas imediatas para excluir tais informações de nossos servidores e encerrar a conta associada.
 Se você é pai, mãe ou responsável legal e acredita que seu filho(a) forneceu informações pessoais ao Chills Game, entre em contato conosco pelo e-mail contatochills@gmail.com.</p>
-    </div>
-    <div class="section">
-      <h2>11. Cookies e Tecnologias Semelhantes</h2>
-      <p>Podemos utilizar cookies e tecnologias semelhantes para melhorar a experiência do usuário, lembrar preferências e entender como você interage com o aplicativo.</p>
-    </div>
-    <div class="section">
-      <h2>12. Alterações na Política de Privacidade</h2>
-      <p>Podemos atualizar esta Política de Privacidade periodicamente. As alterações serão publicadas com a data de atualização indicada.</p>
-    </div>
-    <div class="section">
-      <h2>13. Contato e Encarregado de Dados</h2>
-      <p>Caso tenha dúvidas sobre esta Política de Privacidade, entre em contato conosco:
+</div>
+<div class="section">
+<h2>11. Cookies e Tecnologias Semelhantes</h2>
+<p>Podemos utilizar cookies e tecnologias semelhantes para melhorar a experiência do usuário, lembrar preferências e entender como você interage com o aplicativo.</p>
+</div>
+<div class="section">
+<h2>12. Alterações na Política de Privacidade</h2>
+<p>Podemos atualizar esta Política de Privacidade periodicamente. As alterações serão publicadas com a data de atualização indicada.</p>
+</div>
+<div class="section">
+<h2>13. Contato e Encarregado de Dados</h2>
+<p>Caso tenha dúvidas sobre esta Política de Privacidade, entre em contato conosco:
 <strong>E-mail:</strong> contatochills@gmail.com
 <strong>Responsáveis:</strong> Vitor Vasconcellos Dias e Rafael Alves Damião da Rocha Neiva (Two Devs)</p>
-    </div>
-    <div class="divider"></div>
-    <div class="section">
-      <h2>SOLICITAÇÃO DE EXCLUSÃO DE CONTA</h2>
-      <p>O Chills Game oferece duas formas para você solicitar a exclusão da sua conta:</p>
-      <p><strong>Opção 1 — Pelo Aplicativo (recomendado)</strong></p>
-      <p>Acesse a página de perfil do aplicativo e utilize a opção "Excluir Conta". O processo será iniciado automaticamente.</p>
-      <p><strong>Opção 2 — Por E-mail</strong></p>
-      <p>Envie um e-mail para: contatochills@gmail.com</p>
-      <p>No e-mail, inclua: Assunto "Solicitação de Exclusão de Conta", nome completo e e-mail associados à conta.</p>
-      <p><strong>Prazo de Processamento:</strong> Processaremos a exclusão e você receberá confirmação por e-mail dentro de 7 dias úteis.</p>
-      <p><strong>Importante:</strong> A exclusão é permanente e os dados não poderão ser recuperados.</p>
-    </div>
-  </div>
+</div>
+<div class="divider"></div>
+<div class="section">
+<h2>SOLICITAÇÃO DE EXCLUSÃO DE CONTA</h2>
+<p>O Chills Game oferece duas formas para você solicitar a exclusão da sua conta:</p>
+<p><strong>Opção 1 — Pelo Aplicativo (recomendado)</strong></p>
+<p>Acesse a página de perfil do aplicativo e utilize a opção "Excluir Conta". O processo será iniciado automaticamente.</p>
+<p><strong>Opção 2 — Por E-mail</strong></p>
+<p>Envie um e-mail para: contatochills@gmail.com</p>
+<p>No e-mail, inclua: Assunto "Solicitação de Exclusão de Conta", nome completo e e-mail associados à conta.</p>
+<p><strong>Prazo de Processamento:</strong> Processaremos a exclusão e você receberá confirmação por e-mail dentro de 7 dias úteis.</p>
+<p><strong>Importante:</strong> A exclusão é permanente e os dados não poderão ser recuperados.</p>
+</div>
+</div>
+<div class="lang" data-lang="en" data-title="Privacy Policy - Chills Game" hidden>
+<div class="header"><h1>PRIVACY POLICY</h1></div>
+<div class="update">Last updated: 10/19/2026</div>
+<div class="section">
+<h2>1. Identification of the Data Controller</h2>
+<p>The Chills Game application is developed and operated by Vitor Vasconcellos Dias and Rafael Alves Damião da Rocha Neiva, under the name Two Devs, reachable at contatochills@gmail.com.
+For the purposes of the Brazilian General Data Protection Law (Law No. 13,709/2018 - LGPD), the parties indicated above act as controllers of your personal data and are responsible for the decisions regarding the processing of your information.</p>
+</div>
+<div class="section">
+<h2>2. Information We Collect</h2>
+<p>We collect the following information when you use Chills Game:</p>
+<p><strong>2.1 Personal Information</strong></p>
+<p>- Full Name: When you register or sign in via Google or Apple, we may collect your full name.<br>
+- E-mail: We collect your e-mail for communication and for features related to your account.</p>
+<p><strong>2.2 Usage Information</strong></p>
+<p>- App Interaction: Data on how you use the app, such as time of use, games played and interactions.<br>
+- Device Information: Device model, operating system, device identifiers.<br>
+- Advertising Identifiers: We use advertising identifiers to display ads through Google AdMob.</p>
+</div>
+<div class="section">
+<h2>3. Legal Bases for Processing</h2>
+<p>The processing of your personal data is based on the following legal bases set out in the LGPD (Art. 7):</p>
+<p><strong>Performance of a contract:</strong> To provide the Chills Game services, manage your account and process subscriptions (Art. 7, V).</p>
+<p><strong>Consent:</strong> To send promotional notifications and marketing communications (Art. 7, I). You may withdraw your consent at any time.</p>
+<p><strong>Legitimate interest:</strong> To improve our services, personalise your experience, ensure the security of the application and carry out performance analysis (Art. 7, IX).</p>
+<p><strong>Compliance with a legal obligation:</strong> To meet legal or regulatory requirements or judicial orders (Art. 7, II).</p>
+</div>
+<div class="section">
+<h2>4. How We Use Your Information</h2>
+<p>We use your information for the following purposes:</p>
+<p>- To provide and improve the Chills Game services.<br>
+- To personalise your experience in the app.<br>
+- To send notifications, promotions and other related communications.<br>
+- To display ads through Google AdMob.<br>
+- To ensure the security and integrity of the app.<br>
+- To analyse the performance of the application and fix technical errors.<br>
+- To comply with legal and regulatory obligations.</p>
+</div>
+<div class="section">
+<h2>5. Sharing of Information</h2>
+<p>We do not sell your personal information. We may share your data with third parties only in the following situations:</p>
+<p><strong>Service providers:</strong> We share data with service providers that support the operation of the app, such as:<br>
+- Firebase (Google): For data storage and authentication.<br>
+- Google AdMob: For displaying ads.<br>
+- RevenueCat: For subscription management.<br>
+- Google Play Store and Apple App Store: For processing payments and subscriptions.</p>
+<p>If new providers are added, this policy will be updated.</p>
+<p><strong>Legal requirements:</strong> We may disclose your information to comply with the law, respond to government requests or protect our legal rights.</p>
+<p><strong>Consent:</strong> We may share information with third parties when you give explicit consent to do so.</p>
+</div>
+<div class="section">
+<h2>6. International Data Transfers</h2>
+<p>Some of our service providers, such as Firebase and analytics tools, may store and process your data on servers located outside Brazil, including in the United States.
+In these cases, we adopt measures to ensure that your data receives an adequate level of protection, in accordance with Art. 33 of the LGPD.</p>
+</div>
+<div class="section">
+<h2>7. Data Storage and Security</h2>
+<p>We take appropriate security measures to protect your information, such as encryption and server security practices. Your data is stored on secure servers operated by our service providers (such as Firebase).</p>
+<p>However, no data transmission over the internet is 100% secure, and we cannot guarantee complete security. In the event of a security incident that may cause relevant risk or harm, we will notify the affected users and the Brazilian National Data Protection Authority (ANPD), as required by the LGPD.</p>
+</div>
+<div class="section">
+<h2>8. Data Retention</h2>
+<p>We will keep your information while your account is active or as necessary to provide our services. You may request the deletion of your personal information at any time.</p>
+<p>In some cases, we may retain certain information for longer periods, as required by law or for legitimate business purposes.</p>
+</div>
+<div class="section">
+<h2>9. Your Rights (LGPD - Art. 18)</h2>
+<p>In accordance with the LGPD, you have the following rights over your personal information:</p>
+<p><strong>Confirmation and Access:</strong> Request confirmation that processing exists and a copy of your personal information.<br>
+<strong>Correction:</strong> Update incomplete, inaccurate or outdated information.<br>
+<strong>Anonymisation, blocking or deletion:</strong> Request the appropriate treatment of unnecessary or excessive data.<br>
+<strong>Deletion:</strong> Request the deletion of personal data processed on the basis of your consent.<br>
+<strong>Portability:</strong> Request the transfer of your data to another service, when technically possible.<br>
+<strong>Withdrawal of consent:</strong> Where processing is based on your consent, you may withdraw it at any time.<br>
+<strong>Information about sharing:</strong> Request information about which entities your data has been shared with.</p>
+<p>To exercise your rights, contact us by e-mail at contatochills@gmail.com. We will respond to requests within 15 (fifteen) business days.</p>
+</div>
+<div class="section">
+<h2>10. Protection of Minors’ Data</h2>
+<p>Chills Game is intended exclusively for people aged 18 and over. We do not knowingly collect personal data from anyone under 18.
+If we become aware that we have collected data from a minor, we will take immediate steps to delete that information from our servers and terminate the associated account.
+If you are a parent or legal guardian and believe that your child has provided personal information to Chills Game, please contact us by e-mail at contatochills@gmail.com.</p>
+</div>
+<div class="section">
+<h2>11. Cookies and Similar Technologies</h2>
+<p>We may use cookies and similar technologies to improve the user experience, remember preferences and understand how you interact with the application.</p>
+</div>
+<div class="section">
+<h2>12. Changes to the Privacy Policy</h2>
+<p>We may update this Privacy Policy periodically. Changes will be published with the update date indicated.</p>
+</div>
+<div class="section">
+<h2>13. Contact and Data Protection Officer</h2>
+<p>If you have questions about this Privacy Policy, please contact us:
+<strong>E-mail:</strong> contatochills@gmail.com
+<strong>Responsible:</strong> Vitor Vasconcellos Dias and Rafael Alves Damião da Rocha Neiva (Two Devs)</p>
+</div>
+<div class="divider"></div>
+<div class="section">
+<h2>ACCOUNT DELETION REQUEST</h2>
+<p>Chills Game offers two ways for you to request the deletion of your account:</p>
+<p><strong>Option 1 — In the Application (recommended)</strong></p>
+<p>Go to the profile page in the application and use the "Delete Account" option. The process starts automatically.</p>
+<p><strong>Option 2 — By E-mail</strong></p>
+<p>Send an e-mail to: contatochills@gmail.com</p>
+<p>In the e-mail, include: the subject "Account Deletion Request", and the full name and e-mail associated with the account.</p>
+<p><strong>Processing Time:</strong> We will process the deletion and you will receive confirmation by e-mail within 7 business days.</p>
+<p><strong>Important:</strong> The deletion is permanent and the data cannot be recovered.</p>
+</div>
+</div>
+<div class="lang" data-lang="es" data-title="Política de Privacidad - Chills Game" hidden>
+<div class="header"><h1>POLÍTICA DE PRIVACIDAD</h1></div>
+<div class="update">Última actualización: 19/10/2026</div>
+<div class="section">
+<h2>1. Identificación del Responsable del Tratamiento</h2>
+<p>La aplicación Chills Game es desarrollada y operada por Vitor Vasconcellos Dias y Rafael Alves Damião da Rocha Neiva, bajo el nombre Two Devs, con dirección electrónica contatochills@gmail.com.
+A los efectos de la Ley General de Protección de Datos Personales de Brasil (Ley nº 13.709/2018 - LGPD), los responsables indicados arriba actúan como controladores de sus datos personales y son responsables de las decisiones relativas al tratamiento de su información.</p>
+</div>
+<div class="section">
+<h2>2. Información que Recopilamos</h2>
+<p>Recopilamos la siguiente información cuando utiliza Chills Game:</p>
+<p><strong>2.1 Información Personal</strong></p>
+<p>- Nombre Completo: Cuando usted se registra o inicia sesión mediante Google o Apple, podemos recopilar su nombre completo.<br>
+- Correo electrónico: Recopilamos su correo para comunicación y para funciones relacionadas con su cuenta.</p>
+<p><strong>2.2 Información de Uso</strong></p>
+<p>- Interacción con la App: Datos sobre cómo utiliza la app, como tiempo de uso, juegos jugados e interacciones.<br>
+- Información del Dispositivo: Modelo del dispositivo, sistema operativo, identificadores de dispositivo.<br>
+- Identificadores de Publicidad: Utilizamos identificadores de publicidad para mostrar anuncios mediante Google AdMob.</p>
+</div>
+<div class="section">
+<h2>3. Bases Legales para el Tratamiento de Datos</h2>
+<p>El tratamiento de sus datos personales se realiza con fundamento en las siguientes bases legales previstas en la LGPD (Art. 7):</p>
+<p><strong>Ejecución de contrato:</strong> Para prestar los servicios de Chills Game, gestionar su cuenta y procesar suscripciones (Art. 7, V).</p>
+<p><strong>Consentimiento:</strong> Para el envío de notificaciones promocionales y comunicaciones de marketing (Art. 7, I). Usted puede revocar su consentimiento en cualquier momento.</p>
+<p><strong>Interés legítimo:</strong> Para mejorar nuestros servicios, personalizar su experiencia, garantizar la seguridad de la aplicación y realizar análisis de desempeño (Art. 7, IX).</p>
+<p><strong>Cumplimiento de obligación legal:</strong> Para atender exigencias legales, regulatorias o determinaciones judiciales (Art. 7, II).</p>
+</div>
+<div class="section">
+<h2>4. Cómo Usamos Su Información</h2>
+<p>Usamos su información para los siguientes fines:</p>
+<p>- Para prestar y mejorar los servicios de Chills Game.<br>
+- Para personalizar su experiencia en la app.<br>
+- Para enviar notificaciones, promociones y otras comunicaciones relacionadas.<br>
+- Para mostrar anuncios mediante Google AdMob.<br>
+- Para garantizar la seguridad e integridad de la app.<br>
+- Para analizar el desempeño de la aplicación y corregir errores técnicos.<br>
+- Para cumplir obligaciones legales y regulatorias.</p>
+</div>
+<div class="section">
+<h2>5. Compartición de Información</h2>
+<p>No vendemos su información personal. Podemos compartir sus datos con terceros únicamente en las siguientes situaciones:</p>
+<p><strong>Proveedores de servicios:</strong> Compartimos datos con prestadores de servicios que apoyan el funcionamiento de la app, como:<br>
+- Firebase (Google): Para almacenamiento de datos y autenticación.<br>
+- Google AdMob: Para mostrar anuncios.<br>
+- RevenueCat: Para la gestión de suscripciones.<br>
+- Google Play Store y Apple App Store: Para el procesamiento de pagos y suscripciones.</p>
+<p>Si se incorporan nuevos proveedores, esta política será actualizada.</p>
+<p><strong>Exigencias legales:</strong> Podemos divulgar su información para cumplir con la ley, responder a solicitudes gubernamentales o proteger nuestros derechos legales.</p>
+<p><strong>Consentimiento:</strong> Podemos compartir información con terceros cuando usted otorgue consentimiento explícito para ello.</p>
+</div>
+<div class="section">
+<h2>6. Transferencia Internacional de Datos</h2>
+<p>Algunos de nuestros proveedores de servicios, como Firebase y herramientas de análisis, pueden almacenar y procesar sus datos en servidores ubicados fuera de Brasil, incluidos los Estados Unidos.
+En estos casos, adoptamos medidas para garantizar que sus datos reciban un nivel de protección adecuado, conforme al Art. 33 de la LGPD.</p>
+</div>
+<div class="section">
+<h2>7. Almacenamiento y Seguridad de los Datos</h2>
+<p>Tomamos medidas de seguridad adecuadas para proteger su información, como cifrado y prácticas de seguridad en servidores. Sus datos se almacenan en servidores seguros operados por nuestros proveedores de servicios (como Firebase).</p>
+<p>Sin embargo, ninguna transmisión de datos por internet es 100% segura, y no podemos garantizar la seguridad total. En caso de incidente de seguridad que pueda ocasionar riesgo o daño relevante, notificaremos a los usuarios afectados y a la Autoridad Nacional de Protección de Datos de Brasil (ANPD), conforme lo exige la LGPD.</p>
+</div>
+<div class="section">
+<h2>8. Retención de Datos</h2>
+<p>Mantendremos su información mientras su cuenta esté activa o según sea necesario para prestar nuestros servicios. Usted puede solicitar la eliminación de su información personal en cualquier momento.</p>
+<p>En algunos casos, podemos retener cierta información por períodos más largos, conforme lo exija la ley o para fines legítimos de negocio.</p>
+</div>
+<div class="section">
+<h2>9. Sus Derechos (LGPD - Art. 18)</h2>
+<p>De acuerdo con la LGPD, usted tiene los siguientes derechos sobre su información personal:</p>
+<p><strong>Confirmación y Acceso:</strong> Solicitar la confirmación de la existencia de tratamiento y una copia de su información personal.<br>
+<strong>Corrección:</strong> Actualizar información incompleta, inexacta o desactualizada.<br>
+<strong>Anonimización, bloqueo o eliminación:</strong> Solicitar el tratamiento adecuado de datos innecesarios o excesivos.<br>
+<strong>Eliminación:</strong> Solicitar la eliminación de datos personales tratados con base en su consentimiento.<br>
+<strong>Portabilidad:</strong> Solicitar la transferencia de sus datos a otro servicio, cuando sea técnicamente posible.<br>
+<strong>Revocación del consentimiento:</strong> Cuando el tratamiento se base en su consentimiento, usted puede revocarlo en cualquier momento.<br>
+<strong>Información sobre compartición:</strong> Solicitar información sobre con qué entidades se han compartido sus datos.</p>
+<p>Para ejercer sus derechos, contáctenos por el correo contatochills@gmail.com. Responderemos a las solicitudes en un plazo de 15 (quince) días hábiles.</p>
+</div>
+<div class="section">
+<h2>10. Protección de Datos de Menores</h2>
+<p>Chills Game está destinado exclusivamente a mayores de 18 años. No recopilamos intencionalmente datos personales de menores de 18 años.
+Si llegamos a saber que hemos recopilado datos de un menor de edad, tomaremos medidas inmediatas para eliminar dicha información de nuestros servidores y cerrar la cuenta asociada.
+Si usted es padre, madre o tutor legal y cree que su hijo o hija ha proporcionado información personal a Chills Game, contáctenos por el correo contatochills@gmail.com.</p>
+</div>
+<div class="section">
+<h2>11. Cookies y Tecnologías Similares</h2>
+<p>Podemos utilizar cookies y tecnologías similares para mejorar la experiencia del usuario, recordar preferencias y entender cómo interactúa usted con la aplicación.</p>
+</div>
+<div class="section">
+<h2>12. Cambios en la Política de Privacidad</h2>
+<p>Podemos actualizar esta Política de Privacidad periódicamente. Los cambios se publicarán con la fecha de actualización indicada.</p>
+</div>
+<div class="section">
+<h2>13. Contacto y Encargado de Datos</h2>
+<p>Si tiene dudas sobre esta Política de Privacidad, contáctenos:
+<strong>Correo:</strong> contatochills@gmail.com
+<strong>Responsables:</strong> Vitor Vasconcellos Dias y Rafael Alves Damião da Rocha Neiva (Two Devs)</p>
+</div>
+<div class="divider"></div>
+<div class="section">
+<h2>SOLICITUD DE ELIMINACIÓN DE CUENTA</h2>
+<p>Chills Game ofrece dos formas para que usted solicite la eliminación de su cuenta:</p>
+<p><strong>Opción 1 — Por la Aplicación (recomendado)</strong></p>
+<p>Acceda a la página de perfil de la aplicación y utilice la opción "Eliminar Cuenta". El proceso se iniciará automáticamente.</p>
+<p><strong>Opción 2 — Por Correo Electrónico</strong></p>
+<p>Envíe un correo a: contatochills@gmail.com</p>
+<p>En el correo, incluya: el asunto "Solicitud de Eliminación de Cuenta", el nombre completo y el correo asociados a la cuenta.</p>
+<p><strong>Plazo de Procesamiento:</strong> Procesaremos la eliminación y usted recibirá confirmación por correo dentro de 7 días hábiles.</p>
+<p><strong>Importante:</strong> La eliminación es permanente y los datos no podrán ser recuperados.</p>
+</div>
+</div>
+</div>
+<script>
+(function () {
+  var guardado = null;
+  try { guardado = localStorage.getItem('chills_lang'); } catch (e) {}
+  var nav = (navigator.language || 'pt').slice(0, 2).toLowerCase();
+  var inicial = guardado || (nav === 'en' || nav === 'es' ? nav : 'pt');
+
+  function trocar(l) {
+    var blocos = document.querySelectorAll('.lang');
+    for (var i = 0; i < blocos.length; i++) {
+      blocos[i].hidden = (blocos[i].getAttribute('data-lang') !== l);
+    }
+    var bts = document.querySelectorAll('.langbar button');
+    for (var j = 0; j < bts.length; j++) {
+      bts[j].setAttribute('aria-current', bts[j].getAttribute('data-l') === l ? 'true' : 'false');
+    }
+    document.documentElement.lang = (l === 'pt' ? 'pt-BR' : l);
+    var t = document.querySelector('.lang[data-lang="' + l + '"]');
+    if (t && t.getAttribute('data-title')) { document.title = t.getAttribute('data-title'); }
+    try { localStorage.setItem('chills_lang', l); } catch (e) {}
+  }
+
+  var bts = document.querySelectorAll('.langbar button');
+  for (var k = 0; k < bts.length; k++) {
+    bts[k].addEventListener('click', function () { trocar(this.getAttribute('data-l')); });
+  }
+  trocar(inicial);
+})();
+</script>
 </body>
 </html>
